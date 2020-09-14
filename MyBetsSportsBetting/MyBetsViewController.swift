@@ -8,10 +8,12 @@
 
 import UIKit
 
-class MyBetsViewController: UIViewController {
+open class MyBetsViewController: UIViewController {
 
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
+
+        print("Successfully accessible My Bets")
     }
 
 
