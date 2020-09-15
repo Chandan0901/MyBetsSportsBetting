@@ -13,9 +13,14 @@ open class MyBetsViewController: UIViewController {
     open override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("Successfully accessible My Bets")
+        restCall()
     }
 
+    open func restCall() {
+        NetworkManager.sharedInstance.userDataAPI(paramsString: "") { (model, error) in
+            print("My Bets")
+        }
+    }
 
 }
 

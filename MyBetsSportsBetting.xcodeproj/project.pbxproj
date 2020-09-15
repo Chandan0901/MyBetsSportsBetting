@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9595C8C59151E67142B2E852 /* Pods_MyBetsSportsBetting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E4011F9468B3AD0CD5B7F3 /* Pods_MyBetsSportsBetting.framework */; };
 		C5A05A42250F8312002C3801 /* MyBets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5A05A40250F8312002C3801 /* MyBets.storyboard */; };
+		C5A05A51251096E7002C3801 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A05A4F251096E7002C3801 /* NetworkManager.swift */; };
+		C5A05A52251096E7002C3801 /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A05A50251096E7002C3801 /* UsersModel.swift */; };
 		C5E36F80250B860600E453C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E36F7F250B860600E453C9 /* AppDelegate.swift */; };
 		C5E36F84250B860600E453C9 /* MyBetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E36F83250B860600E453C9 /* MyBetsViewController.swift */; };
 		C5E36F89250B860800E453C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5E36F88250B860800E453C9 /* Assets.xcassets */; };
@@ -15,13 +18,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D8620F538B580803F4D270C /* Pods-MyBetsSportsBetting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBetsSportsBetting.release.xcconfig"; path = "Target Support Files/Pods-MyBetsSportsBetting/Pods-MyBetsSportsBetting.release.xcconfig"; sourceTree = "<group>"; };
+		61E4011F9468B3AD0CD5B7F3 /* Pods_MyBetsSportsBetting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyBetsSportsBetting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A05A41250F8312002C3801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MyBets.storyboard; sourceTree = "<group>"; };
+		C5A05A4F251096E7002C3801 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C5A05A50251096E7002C3801 /* UsersModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
 		C5E36F7C250B860600E453C9 /* MyBetsSportsBetting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBetsSportsBetting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5E36F7F250B860600E453C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5E36F83250B860600E453C9 /* MyBetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBetsViewController.swift; sourceTree = "<group>"; };
 		C5E36F88250B860800E453C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5E36F8B250B860800E453C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5E36F8D250B860800E453C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1F4EA32ED25C3D15AB6763E /* Pods-MyBetsSportsBetting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBetsSportsBetting.debug.xcconfig"; path = "Target Support Files/Pods-MyBetsSportsBetting/Pods-MyBetsSportsBetting.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9595C8C59151E67142B2E852 /* Pods_MyBetsSportsBetting.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5049D5B239D15BC2F1463D6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1F4EA32ED25C3D15AB6763E /* Pods-MyBetsSportsBetting.debug.xcconfig */,
+				4D8620F538B580803F4D270C /* Pods-MyBetsSportsBetting.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C1805D7A7CD967E091247B1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61E4011F9468B3AD0CD5B7F3 /* Pods_MyBetsSportsBetting.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C5E36F73250B860600E453C9 = {
 			isa = PBXGroup;
 			children = (
 				C5E36F7E250B860600E453C9 /* MyBetsSportsBetting */,
 				C5E36F7D250B860600E453C9 /* Products */,
+				5049D5B239D15BC2F1463D6A /* Pods */,
+				C1805D7A7CD967E091247B1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +84,8 @@
 			children = (
 				C5E36F7F250B860600E453C9 /* AppDelegate.swift */,
 				C5E36F83250B860600E453C9 /* MyBetsViewController.swift */,
+				C5A05A4F251096E7002C3801 /* NetworkManager.swift */,
+				C5A05A50251096E7002C3801 /* UsersModel.swift */,
 				C5E36F88250B860800E453C9 /* Assets.xcassets */,
 				C5A05A40250F8312002C3801 /* MyBets.storyboard */,
 				C5E36F8A250B860800E453C9 /* LaunchScreen.storyboard */,
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5E36F90250B860800E453C9 /* Build configuration list for PBXNativeTarget "MyBetsSportsBetting" */;
 			buildPhases = (
+				93A46E40D02035DFE3E61A0C /* [CP] Check Pods Manifest.lock */,
 				C5E36F78250B860600E453C9 /* Sources */,
 				C5E36F79250B860600E453C9 /* Frameworks */,
 				C5E36F7A250B860600E453C9 /* Resources */,
+				8013571546CD9F0829B3E9D4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +162,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8013571546CD9F0829B3E9D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyBetsSportsBetting/Pods-MyBetsSportsBetting-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyBetsSportsBetting/Pods-MyBetsSportsBetting-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyBetsSportsBetting/Pods-MyBetsSportsBetting-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93A46E40D02035DFE3E61A0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyBetsSportsBetting-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C5E36F78250B860600E453C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5A05A51251096E7002C3801 /* NetworkManager.swift in Sources */,
 				C5E36F84250B860600E453C9 /* MyBetsViewController.swift in Sources */,
+				C5A05A52251096E7002C3801 /* UsersModel.swift in Sources */,
 				C5E36F80250B860600E453C9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +354,7 @@
 		};
 		C5E36F91250B860800E453C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1F4EA32ED25C3D15AB6763E /* Pods-MyBetsSportsBetting.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +374,7 @@
 		};
 		C5E36F92250B860800E453C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D8620F538B580803F4D270C /* Pods-MyBetsSportsBetting.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
