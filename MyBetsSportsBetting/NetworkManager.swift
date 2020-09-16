@@ -11,7 +11,7 @@ class NetworkManager {
     }
 
 
-
+/**/
     func userDataAPI(paramsString:String,completion: @escaping ((UsersModel?, Error?) -> Void)) {
 
         let userDataURLString = "https://randomuser.me/api/?results=10"
@@ -24,7 +24,7 @@ class NetworkManager {
 
         }
 
-        Alamofire.request(usersListURL, method: .get, parameters: nil, encoding:  URLEncoding.default, headers: nil).response { (response: DefaultDataResponse) in
+        AF.request(usersListURL, method: .get, parameters: nil, encoding:  URLEncoding.default, headers: nil).response { (response: DataResponse) in
 
             if let error = response.error {
 
